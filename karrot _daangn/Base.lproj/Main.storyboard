@@ -217,7 +217,7 @@
                                                                 </constraints>
                                                                 <color key="tintColor" systemColor="labelColor"/>
                                                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                                <state key="normal" title="   내 동네 설정" image="mappin" catalog="system">
+                                                                <state key="normal" title="   내 동네 설정" image="mappin.circle" catalog="system">
                                                                     <color key="titleColor" systemColor="labelColor"/>
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                                                 </state>
@@ -281,13 +281,69 @@
                                                     <constraint firstItem="LVb-N3-R3c" firstAttribute="height" secondItem="ss3-Oe-gEo" secondAttribute="height" id="xDG-Fb-WWl"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BmT-5v-DGD">
+                                                <rect key="frame" x="0.0" y="580" width="414" height="160"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PmJ-8i-01u">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLL-EH-at0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="YlF-UR-aTQ"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   동네생활 글" image="pencil.and.outline" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79D-Ni-GOh">
+                                                                <rect key="frame" x="0.0" y="50" width="414" height="55"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="55" id="U57-40-Cwx"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   동네생활 댓글" image="text.bubble" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXd-eB-Dce">
+                                                                <rect key="frame" x="0.0" y="105" width="414" height="55"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="55" id="QS5-RW-qE9"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   동네생활 주제목록" image="star" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="PmJ-8i-01u" firstAttribute="leading" secondItem="BmT-5v-DGD" secondAttribute="leading" id="3Ih-gX-aBB"/>
+                                                    <constraint firstItem="PmJ-8i-01u" firstAttribute="top" secondItem="BmT-5v-DGD" secondAttribute="top" id="DDR-tG-rIm"/>
+                                                    <constraint firstAttribute="bottom" secondItem="PmJ-8i-01u" secondAttribute="bottom" id="NCy-x5-4WX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="PmJ-8i-01u" secondAttribute="trailing" id="p1o-L2-6N9"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
+                                            <constraint firstItem="BmT-5v-DGD" firstAttribute="top" secondItem="ss3-Oe-gEo" secondAttribute="bottom" constant="10" id="Baq-rE-6ar"/>
                                             <constraint firstItem="1Z9-Fi-p5l" firstAttribute="leading" secondItem="rUO-7C-w59" secondAttribute="leading" id="dew-ww-2Z7"/>
+                                            <constraint firstAttribute="trailing" secondItem="BmT-5v-DGD" secondAttribute="trailing" id="gb7-E8-LRH"/>
                                             <constraint firstAttribute="trailing" secondItem="ss3-Oe-gEo" secondAttribute="trailing" id="iHX-BC-U1s"/>
                                             <constraint firstItem="ss3-Oe-gEo" firstAttribute="leading" secondItem="rUO-7C-w59" secondAttribute="leading" id="vOm-Tm-VHV"/>
                                             <constraint firstAttribute="trailing" secondItem="1Z9-Fi-p5l" secondAttribute="trailing" id="wmi-gT-7DA"/>
+                                            <constraint firstItem="BmT-5v-DGD" firstAttribute="leading" secondItem="rUO-7C-w59" secondAttribute="leading" id="xey-LH-Wmm"/>
                                             <constraint firstItem="1Z9-Fi-p5l" firstAttribute="top" secondItem="rUO-7C-w59" secondAttribute="top" id="xgJ-gx-D6T"/>
                                             <constraint firstItem="ss3-Oe-gEo" firstAttribute="top" secondItem="1Z9-Fi-p5l" secondAttribute="bottom" constant="10" id="ydh-nL-c2E"/>
                                         </constraints>
@@ -393,15 +449,18 @@
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="heart.circle.fill" catalog="system" width="128" height="121"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
-        <image name="mappin" catalog="system" width="105" height="128"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <image name="mappin.circle" catalog="system" width="128" height="121"/>
         <image name="note.text" catalog="system" width="128" height="106"/>
+        <image name="pencil.and.outline" catalog="system" width="128" height="128"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="slider.vertical.3" catalog="system" width="128" height="111"/>
         <image name="square.grid.2x2" catalog="system" width="128" height="114"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <image name="tag" catalog="system" width="128" height="119"/>
         <image name="target" catalog="system" width="128" height="121"/>
+        <image name="text.bubble" catalog="system" width="128" height="110"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
