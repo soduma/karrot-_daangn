@@ -9,15 +9,21 @@ import UIKit
 
 class MyDaangnViewController: UIViewController {
 
+    @IBOutlet weak var profileImageButton: UIButton!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var identifierLabel: UILabel!
+    @IBOutlet weak var profileButton: UIButton!
+    @IBOutlet weak var sellListButton: UIButton!
+    @IBOutlet weak var buyListButton: UIButton!
+    @IBOutlet weak var interestButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let label = UILabel()
-//        label.textColor = .black
-//        label.text = "나의 당근"
-//        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
-
-        // Do any additional setup after loading the view.
+        profileButton.layer.borderWidth = 1
+        profileButton.layer.cornerRadius = 5
+        profileButton.layer.borderColor = UIColor.systemGray.cgColor
     }
     
 
