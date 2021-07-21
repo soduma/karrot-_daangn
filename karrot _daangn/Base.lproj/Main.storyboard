@@ -122,7 +122,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#123456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqX-TQ-amR">
-                                                        <rect key="frame" x="122" y="77.5" width="69" height="21"/>
+                                                        <rect key="frame" x="122" y="77.5" width="69" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
@@ -205,10 +205,80 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ss3-Oe-gEo">
-                                                <rect key="frame" x="0.0" y="310" width="414" height="300"/>
+                                                <rect key="frame" x="0.0" y="310" width="414" height="260"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LVb-N3-R3c">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laV-AG-g4t">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="55" id="a4I-gq-QYa"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   내 동네 설정" image="mappin" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tm0-r3-H8H">
+                                                                <rect key="frame" x="0.0" y="55" width="414" height="55"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="55" id="lQg-1A-II3"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   동네 인증하기" image="target" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d56-FQ-3w8">
+                                                                <rect key="frame" x="0.0" y="110" width="414" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="sxl-Kx-ISO"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   키워드 알림" image="tag" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzC-Dm-zd4">
+                                                                <rect key="frame" x="0.0" y="160" width="414" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="bi2-mC-jgC"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   모아보기" image="square.grid.2x2" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tea-19-kMv">
+                                                                <rect key="frame" x="0.0" y="210" width="414" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="YXI-6N-shP"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   관심 카테고리 설정" image="slider.vertical.3" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="300" id="5hG-wZ-umG"/>
+                                                    <constraint firstItem="LVb-N3-R3c" firstAttribute="top" secondItem="ss3-Oe-gEo" secondAttribute="top" id="d8q-h9-U1z"/>
+                                                    <constraint firstItem="LVb-N3-R3c" firstAttribute="leading" secondItem="ss3-Oe-gEo" secondAttribute="leading" id="eFr-rt-4aD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LVb-N3-R3c" secondAttribute="trailing" id="lpS-Y0-TmI"/>
+                                                    <constraint firstItem="LVb-N3-R3c" firstAttribute="height" secondItem="ss3-Oe-gEo" secondAttribute="height" id="xDG-Fb-WWl"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -295,10 +365,10 @@
         <!--Tab Bar Controller-->
         <scene sceneID="qw4-Ee-Fks">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zdA-JR-GWy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9QT-yP-aYk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sQ9-n9-7FS">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -311,6 +381,7 @@
                         <segue destination="Moo-Hd-HNF" kind="relationship" relationship="viewControllers" id="cae-mI-xO4"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdA-JR-GWy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="96.428571428571431"/>
         </scene>
@@ -322,10 +393,15 @@
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="heart.circle.fill" catalog="system" width="128" height="121"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="mappin" catalog="system" width="105" height="128"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="note.text" catalog="system" width="128" height="106"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="slider.vertical.3" catalog="system" width="128" height="111"/>
+        <image name="square.grid.2x2" catalog="system" width="128" height="114"/>
+        <image name="tag" catalog="system" width="128" height="119"/>
+        <image name="target" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
