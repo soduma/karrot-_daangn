@@ -11,6 +11,7 @@ class MyDaangnViewController: UIViewController {
 
     @IBOutlet weak var profileImageButton: UIButton!
     @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var identifierLabel: UILabel!
     @IBOutlet weak var profileButton: UIButton!
     @IBOutlet weak var sellListButton: UIButton!
