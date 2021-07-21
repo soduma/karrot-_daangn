@@ -59,7 +59,7 @@
             <objects>
                 <viewController id="Moo-Hd-HNF" customClass="MyDaangnViewController" customModule="karrot__daangn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5pV-wb-f8f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCz-6D-tat" userLabel="topView">
@@ -93,10 +93,10 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YH3-Yo-tea">
-                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="1823"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUO-7C-w59">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJY-ZW-V2A">
                                                 <rect key="frame" x="186" y="240" width="42" height="21"/>
@@ -334,15 +334,127 @@
                                                     <constraint firstAttribute="trailing" secondItem="PmJ-8i-01u" secondAttribute="trailing" id="p1o-L2-6N9"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rk9-aT-U6u">
+                                                <rect key="frame" x="0.0" y="750" width="414" height="160"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="t0B-db-U5Z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QN-Xa-0AZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="U2C-Ty-4gF"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   동네생활 글" image="pencil.and.outline" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNZ-HQ-Xu5">
+                                                                <rect key="frame" x="0.0" y="50" width="414" height="55"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="55" id="Rsa-lI-wni"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   동네생활 댓글" image="text.bubble" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppE-hW-hPO">
+                                                                <rect key="frame" x="0.0" y="105" width="414" height="55"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="55" id="rbz-ch-hBE"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   동네생활 주제목록" image="star" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="t0B-db-U5Z" secondAttribute="bottom" id="MyA-Ls-w1O"/>
+                                                    <constraint firstAttribute="trailing" secondItem="t0B-db-U5Z" secondAttribute="trailing" id="SQ4-f9-fkv"/>
+                                                    <constraint firstItem="t0B-db-U5Z" firstAttribute="leading" secondItem="rk9-aT-U6u" secondAttribute="leading" id="VbR-UZ-k5T"/>
+                                                    <constraint firstItem="t0B-db-U5Z" firstAttribute="top" secondItem="rk9-aT-U6u" secondAttribute="top" id="xgN-fA-neP"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYn-02-PMr">
+                                                <rect key="frame" x="0.0" y="920" width="414" height="160"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N9x-2y-SJM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYN-EB-cA8">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="XeM-Wq-uQW"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   비즈프로필 만들기" image="house" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1Q-6t-5rJ">
+                                                                <rect key="frame" x="0.0" y="50" width="414" height="55"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="55" id="WcW-hb-k1H"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   동네홍보 글" image="list.bullet.rectangle" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icO-Cs-1uf">
+                                                                <rect key="frame" x="0.0" y="105" width="414" height="55"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="55" id="8OB-IL-NY0"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="   지역광고" image="volume.2" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="N9x-2y-SJM" secondAttribute="trailing" id="01e-Cs-F2d"/>
+                                                    <constraint firstItem="N9x-2y-SJM" firstAttribute="leading" secondItem="gYn-02-PMr" secondAttribute="leading" id="3VU-Ee-dNp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="N9x-2y-SJM" secondAttribute="bottom" id="6Iz-ts-lUh"/>
+                                                    <constraint firstItem="N9x-2y-SJM" firstAttribute="top" secondItem="gYn-02-PMr" secondAttribute="top" id="rKr-Bc-BO0"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
+                                            <constraint firstItem="gYn-02-PMr" firstAttribute="leading" secondItem="rUO-7C-w59" secondAttribute="leading" id="54Q-GP-Meg"/>
+                                            <constraint firstItem="rk9-aT-U6u" firstAttribute="leading" secondItem="rUO-7C-w59" secondAttribute="leading" id="8cb-Tb-zvh"/>
                                             <constraint firstItem="BmT-5v-DGD" firstAttribute="top" secondItem="ss3-Oe-gEo" secondAttribute="bottom" constant="10" id="Baq-rE-6ar"/>
+                                            <constraint firstAttribute="trailing" secondItem="gYn-02-PMr" secondAttribute="trailing" id="cq7-Ev-v7H"/>
+                                            <constraint firstItem="rk9-aT-U6u" firstAttribute="top" secondItem="BmT-5v-DGD" secondAttribute="bottom" constant="10" id="daA-NG-8Pn"/>
                                             <constraint firstItem="1Z9-Fi-p5l" firstAttribute="leading" secondItem="rUO-7C-w59" secondAttribute="leading" id="dew-ww-2Z7"/>
                                             <constraint firstAttribute="trailing" secondItem="BmT-5v-DGD" secondAttribute="trailing" id="gb7-E8-LRH"/>
                                             <constraint firstAttribute="trailing" secondItem="ss3-Oe-gEo" secondAttribute="trailing" id="iHX-BC-U1s"/>
+                                            <constraint firstAttribute="trailing" secondItem="rk9-aT-U6u" secondAttribute="trailing" id="mhB-Ug-yAG"/>
                                             <constraint firstItem="ss3-Oe-gEo" firstAttribute="leading" secondItem="rUO-7C-w59" secondAttribute="leading" id="vOm-Tm-VHV"/>
                                             <constraint firstAttribute="trailing" secondItem="1Z9-Fi-p5l" secondAttribute="trailing" id="wmi-gT-7DA"/>
+                                            <constraint firstItem="gYn-02-PMr" firstAttribute="top" secondItem="rk9-aT-U6u" secondAttribute="bottom" constant="10" id="wmp-P6-GDa"/>
                                             <constraint firstItem="BmT-5v-DGD" firstAttribute="leading" secondItem="rUO-7C-w59" secondAttribute="leading" id="xey-LH-Wmm"/>
                                             <constraint firstItem="1Z9-Fi-p5l" firstAttribute="top" secondItem="rUO-7C-w59" secondAttribute="top" id="xgJ-gx-D6T"/>
                                             <constraint firstItem="ss3-Oe-gEo" firstAttribute="top" secondItem="1Z9-Fi-p5l" secondAttribute="bottom" constant="10" id="ydh-nL-c2E"/>
@@ -360,7 +472,7 @@
                         <viewLayoutGuide key="safeArea" id="gbZ-EE-KLO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rUO-7C-w59" firstAttribute="height" secondItem="5pV-wb-f8f" secondAttribute="height" id="Om6-Tm-NPw"/>
+                            <constraint firstItem="rUO-7C-w59" firstAttribute="height" secondItem="5pV-wb-f8f" secondAttribute="height" constant="500" id="Om6-Tm-NPw"/>
                             <constraint firstItem="eCz-6D-tat" firstAttribute="leading" secondItem="gbZ-EE-KLO" secondAttribute="leading" id="TDl-Cg-DAa"/>
                             <constraint firstItem="rUO-7C-w59" firstAttribute="width" secondItem="5pV-wb-f8f" secondAttribute="width" id="aIQ-MH-8Jm"/>
                             <constraint firstItem="gbZ-EE-KLO" firstAttribute="trailing" secondItem="YH3-Yo-tea" secondAttribute="trailing" id="gmh-SQ-moA"/>
@@ -372,6 +484,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="나의 당근" image="person.fill" catalog="system" id="I5z-66-pvM"/>
+                    <size key="freeformSize" width="414" height="2000"/>
                     <connections>
                         <outlet property="buyListButton" destination="bZX-Hy-hAQ" id="tYG-GM-9Ne"/>
                         <outlet property="identifierLabel" destination="LqX-TQ-amR" id="5Xi-bS-1LV"/>
@@ -384,7 +497,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OT9-E6-iib" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2695" y="113"/>
+            <point key="canvasLocation" x="2741" y="380"/>
         </scene>
         <!--동네생활-->
         <scene sceneID="NHx-pL-aiN">
@@ -449,6 +562,8 @@
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="heart.circle.fill" catalog="system" width="128" height="121"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="mappin.circle" catalog="system" width="128" height="121"/>
         <image name="note.text" catalog="system" width="128" height="106"/>
@@ -461,6 +576,7 @@
         <image name="tag" catalog="system" width="128" height="119"/>
         <image name="target" catalog="system" width="128" height="121"/>
         <image name="text.bubble" catalog="system" width="128" height="110"/>
+        <image name="volume.2" catalog="system" width="128" height="90"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
